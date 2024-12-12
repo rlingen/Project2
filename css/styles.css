@@ -152,10 +152,46 @@ section.aboutGrid{
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-areas:
         'heading heading img'
-        'himg bimg img img'
-        'history background img img'
+        'himg bimg img'
+        'history bginfo img';
+    padding:2em;
 }
 
-h2.heading{
-    
+.heading{
+    grid-area:heading;
+    padding:10px;
+}
+img{
+    grid-area: img;
+    aspect-ratio: 1/1;
+    height:500px;
+    margin:10px;
+}
+.himg{
+    grid-area:himg;
+    aspect-ratio: 1/1;
+    height:100px;
+    margin:10px;
+}
+.bimg{
+    grid-area:bimg;
+    aspect-ratio: 1/1;
+    height:100px;
+    margin:10px;
+}
+.history{
+    grid-area:history;
+    padding:10px;
+}
+.bginfo{
+    grid-area:bginfo;
+    padding:10px;
+}
+
+@media (max-width:35em){
+    img{
+        grid-area: img;
+        aspect-ratio: 1/1;
+        height:300px;
+    }
 }
