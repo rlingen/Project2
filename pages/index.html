@@ -42,10 +42,10 @@
       </nav>
 <main class="container-fluid">
     <section class="row bg-primary-subtle">
-        <div class="col-4">
-            <img src="../img/4heads.jpg" height="300px" class="p-1" title="https://english.elpais.com/culture/2024-11-24/talking-heads-the-group-that-made-the-ordinary-eccentric.html">
+        <div class="col-4 d-flex flex-row-reverse">
+            <img src="../img/4heads.jpg" height="300px" class="p-1 " title="https://english.elpais.com/culture/2024-11-24/talking-heads-the-group-that-made-the-ordinary-eccentric.html">
         </div>
-        <div class="col-8">
+        <div class="col-6">
             <h1 class="fascinate-inline-regular">Welcome</h1>
             <!-- I asked chatGPT to write this paragraph with the following prompt: I'm making a website for this company, can you make a paragraph that i can put as a welcome when people open the website? -->
             <p>Welcome to <span class="fascinate-inline-regular">Four the Music-Heads</span>—where passion meets sound! Whether you're a vinyl enthusiast, a digital playlist curator, or just discovering the magic of music, you've found your groove. Explore curated playlists, dive into artist spotlights, and get the latest concert recommendations tailored to your taste. We're here to inspire your lifelong love affair with music, one note at a time. Let’s celebrate the transformative power of sound together!</p>
@@ -58,13 +58,34 @@
             <h2 class="fascinate-inline-regular d-flex justify-content-center">What Customers Are Saying:</h2>
             <img src="../img/yelp-reviews.png" height="50px" class="px-1">
         </div>
-        <div class="d-flex justify-content-center p-2 carousel">
-            <!-- these comments were made by chatGPT "make me a few reviews of things people might say about this website"-->
-                <div class="carousel-inner">
-                  <img src="../img/comments1.png" alt="Image 1">
-                  <img src="../img/comments2.png" alt="Image 2">
-                  <img src="../img/comments3.png" alt="Image 3">
+        <div class="d-flex justify-content-center p-2">
+            <!-- these comments were made by chatGPT after the following prompt: "make me a few reviews of things people might say about this website"-->
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner maxwcarousel">
+                  <div class="carousel-item active">
+                    <img src="../img/comment1.png" class="d-block w-100" alt="comments1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/comment2.png" class="d-block w-100" alt="comments2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/comment3.png" class="d-block w-100" alt="comments3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
     </section>
     <section class="bg-primary-subtle">
