@@ -146,3 +146,16 @@ p.three{
 p.four{
     grid-area:qa4;
 }
+
+section.aboutGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas:
+        'heading heading img'
+        'himg bimg img img'
+        'history background img img'
+}
+
+h2.heading{
+    
+}
