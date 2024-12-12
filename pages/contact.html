@@ -41,14 +41,26 @@
         </div>
       </nav>
 <main class="container-fluid">
-    <h1>contact</h1>
-    
-    <form class="container-fluid mt-3 formBorders">
-      <h3 class="row text-center px-3 ">Want me to contact you? I'd be happy to! Fill out the form below so I can reach out :)</h3>
+  <heading class="container-fluid d-flex bg-secondary-subtle justify-content-center flex-wrap">
+      <h1 class="fascinate-inline-regular basis-100 d-flex justify-content-center">Have Something to Say?</h1>
+      <p class="d-flex text-center justify-content-center basis-100">Your voice is music to our ears! <br> Fill out the corresponding  form below!</p>
+
+      <a href="#employment" class="d-flex flex-column text-center align-content-center justify-content-center px-3 hoverGrow"><i class="fa-solid fa-briefcase"></i> Employment</a>
+      <a href="#services" class="d-flex flex-column text-center align-content-center justify-content-center px-3 hoverGrow"><i class="fa-solid fa-music"></i> Services</a>
+      <a href="#other" class="d-flex flex-column text-center align-content-center justify-content-center px-3 hoverGrow"><i class="fa-solid fa-question"></i> Other</a>
+
+    </heading>
+  <section id="employment" class="grid">
+    <h2 class="fascinate-inline-regular title">Employment:</h2>
+    <form class="container-fluid mt-3 myform">
       <div class="row p-1">
       <label for="FName" class="col-4 col-lg-2 text-end">Full Name:</label>
         <input class="col-8 col-lg-10" type="text" id="FName" name="Full Name">
       </div>
+      <div class="row p-1">
+        <label for="position" class="col-4 col-lg-2 text-end">Position:</label>
+          <input class="col-8 col-lg-10" type="text" id="position" name="position">
+        </div>
       <div class="row p-1">
         <label for="email" class="col-4 col-lg-2 text-end">Email:</label>
         <input class="col-8 col-lg-10" type="email" id="email" name="Email">
@@ -85,6 +97,102 @@
         <label for="submit" class="col-1 offset-9 mt-2"><input class="col3" type="submit" id="submit"></label>
       </div>
     </form>
+  </section>
+
+  <hr class="dotted">
+
+  <section id="services" class="grid">
+    <h2 class="fascinate-inline-regular title">Services:</h2>
+    <form class="container-fluid mt-3 myform">
+      <div class="row p-1">
+      <label for="FName" class="col-4 col-lg-2 text-end">Full Name:</label>
+        <input class="col-8 col-lg-10" type="text" id="FNameS" name="Full Name">
+      </div>
+      <div class="row p-1">
+        <label for="email" class="col-4 col-lg-2 text-end">Email:</label>
+        <input class="col-8 col-lg-10" type="email" id="emailS" name="Email">
+      </div>
+      <div class="row p-1">
+        <label for="phone" class="col-4 col-lg-2 text-end">Phone:</label>
+          <input class="col-8 col-lg-10" type="tel" id="phoneS" name="phone">
+        </div>
+      <div class="row p-1">
+        <div class="col-4 col-lg-2 text-end">
+          Preferred Contact Mode:
+        </div>
+      <div class="col-8 col-lg-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1S">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Phone
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2S" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Email
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <label for="message" class="col-4 col-lg-2 text-end">Message:</label>
+          <input class="col-8 col-lg-10" type="text" id="messageS" name="text">
+    </div>
+    
+      <div class="row">
+        <label for="submit" class="col-1 offset-9 mt-2"><input class="col3" type="submit" id="submitS"></label>
+      </div>
+    </form>
+  </section>
+
+  <hr class="dotted">
+
+  <section id="other" class="grid">
+    <h2 class="fascinate-inline-regular title">Other:</h2>
+    <form class="container-fluid mt-3 myform">
+      <div class="row p-1">
+      <label for="FName" class="col-4 col-lg-2 text-end">Full Name:</label>
+        <input class="col-8 col-lg-10" type="text" id="FNameO" name="Full Name">
+      </div>
+      <div class="row p-1">
+        <label for="email" class="col-4 col-lg-2 text-end">Email:</label>
+        <input class="col-8 col-lg-10" type="email" id="emailO" name="Email">
+      </div>
+      <div class="row p-1">
+        <label for="phone" class="col-4 col-lg-2 text-end">Phone:</label>
+          <input class="col-8 col-lg-10" type="tel" id="phoneO" name="phone">
+        </div>
+      <div class="row p-1">
+        <div class="col-4 col-lg-2 text-end">
+          Preferred Contact Mode:
+        </div>
+      <div class="col-8 col-lg-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1O">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Phone
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2O" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Email
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <label for="message" class="col-4 col-lg-2 text-end">Message:</label>
+          <input class="col-8 col-lg-10" type="text" id="messageO" name="text">
+    </div>
+    
+      <div class="row">
+        <label for="submit" class="col-1 offset-9 mt-2"><input class="col3" type="submit" id="submitO"></label>
+      </div>
+    </form>
+  </section>
+
 
 </main>
       <footer class="footer container-fluid bg-secondary-subtle">

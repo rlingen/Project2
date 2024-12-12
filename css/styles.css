@@ -46,3 +46,27 @@ body.nav{
   .maxwcarousel{
     max-width: 500px;
   }
+
+  .basis-100{
+    flex-basis:100%;
+  }
+
+.hoverGrow {
+    transition: all .5s linear;
+}
+
+.hoverGrow:hover{
+    transform: scale(115%,115%);
+}
+
+section.grid{
+    display:grid;
+    grid-template-columns: 170px 1fr;
+    padding-left: 50px;
+    padding-right:50px;
+}
+
+/* Dotted border */
+hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
