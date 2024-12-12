@@ -161,7 +161,7 @@ section.aboutGrid{
     grid-area:heading;
     padding:10px;
 }
-img{
+.img{
     grid-area: img;
     aspect-ratio: 1/1;
     height:500px;
@@ -189,14 +189,14 @@ img{
 }
 
 @media (max-width:35em){
-    img{
+    .img{
         grid-area: img;
         aspect-ratio: 1/1;
         height:300px;
     }
 }
 
-/* chat GPT helped me with this one */
+/* chat GPT helped me with this one, here's the prompt: "How would I make a text animation where when you hover over something it would underline" */
 .hover-underline {
     position: relative;
     display: inline-block;
