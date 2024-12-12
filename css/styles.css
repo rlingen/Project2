@@ -70,3 +70,79 @@ section.grid{
 hr.dotted {
     border-top: 3px dotted #bbb;
   }
+
+.faqGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'one img1 qa1 qa1'
+        'img2 qa2 qa2 two'
+        'three img3 qa3 qa3'
+        'img4 qa4 qa4 four'
+}
+
+img.one{
+    grid-area:img1;
+    aspect-ratio: 1/1;
+    height: 150px;
+    margin:10px
+}
+img.two{
+    grid-area:img2;
+    aspect-ratio: 1/1;
+    height: 150px;
+    margin:10px
+}
+img.three{
+    grid-area:img3;
+    aspect-ratio: 1/1;
+    height: 150px;
+    margin:10px
+}
+img.four{
+    grid-area:img4;
+    aspect-ratio: 1/1;
+    height: 150px;
+    margin:10px
+}
+
+@media (min-width: 60em){
+    img.one{
+        height:300px;
+    }
+    img.two{
+        height:300px;
+    }
+    img.three{
+        height:300px;
+    }
+    img.four{
+        height:300px;
+    }
+
+    p.one{
+        margin:3em;
+    }
+    p.two{
+        margin:3em;
+    }
+    p.three{
+        margin:3em;
+    }
+    p.four{
+        margin:3em;
+    }
+}
+
+p.one{
+    grid-area:qa1;
+}
+p.two{
+    grid-area:qa2;
+}
+p.three{
+    grid-area:qa3;
+}
+p.four{
+    grid-area:qa4;
+}
