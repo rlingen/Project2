@@ -195,3 +195,27 @@ img{
         height:300px;
     }
 }
+
+/* chat GPT helped me with this one */
+.hover-underline {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .hover-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjust position below the text */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #000;
+    transition: width 0.3s ease; /* Smooth animation */
+  }
+
+  .hover-underline:hover::after {
+    width: 100%; /* Full underline on hover */
+  }
